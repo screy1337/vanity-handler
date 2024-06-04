@@ -8,11 +8,11 @@ const client = new Client({
     ]
 });
 
-const weburl = 'https://discord.com/api/webhooks/1247291645100167319/mEhxijjkubluB6ZbnR1Z0eaIqQKXw8LBNfW0gDbq37Wm81t_pc3_heHywOai8rmJSg-P';
+const weburl = 'webhook url';
 const webhookClient = new WebhookClient({ url: weburl });
 
-const sunucuid = '1222306865602498631'; 
-const selfid = '1127020031969071124'; 
+const sunucuid = 'sunucu id'; 
+const selfid = 'self hesap id'; 
 
 client.on('guildUpdate', async (oldGuild, newGuild) => {
     if (newGuild.id === sunucuid) {
